@@ -152,31 +152,118 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-My-first-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Notes for Markdown" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/28/My-first-blog/">My first blog</a>
-    </h1>
-  
-
-        
-        <a href="/2020/08/28/My-first-blog/" class="archive-article-date">
-  	<time datetime="2020-08-28T13:59:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-28</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
+        <h1 id="Notes-for-Markdown"><a href="#Notes-for-Markdown" class="headerlink" title="Notes for Markdown"></a>Notes for Markdown</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>使用#<br>一级为一个#，二级为2个#，以此类推。共有六级标题。<br>Example：</p>
+<blockquote>
+<p># 一级标题<br>## 二级标题<br>## ……<br>###### 六级标题  </p>
+</blockquote>
+<p>输出为：</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h2 id="……"><a href="#……" class="headerlink" title="……"></a>……</h2><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><hr>
+<h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><p>在末尾加上两个以上的空格加回车用以换行。</p>
 <hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-<p>–</p>
-<p>参考文献</p>
+<h2 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h2><p>使用3个以上的 * 或 - 。</p>
+<hr>
+<h2 id="粗体或斜体文本"><a href="#粗体或斜体文本" class="headerlink" title="粗体或斜体文本"></a>粗体或斜体文本</h2><p>在文字两端添加_用以斜体，添加**用以粗体。</p>
+<blockquote>
+<p>_斜体文本_<br>**粗体文本**  </p>
+</blockquote>
+<p>输出如下：</p>
+<p><em>斜体文本</em><br><strong>粗体文本</strong></p>
+<hr>
+<h2 id="删除线和下划线"><a href="#删除线和下划线" class="headerlink" title="删除线和下划线"></a>删除线和下划线</h2><p>在文字两端加~~用以删除文字，再问两端添加<u></u>以添加下划线。<br>Example：  </p>
+<blockquote>
+<p>~~删除线~~<br>&lt;u&gt;下划线&lt;/u&gt;</p>
+</blockquote>
+<p>输出为：<br><del>删除线</del><br><u>下划线</u>  </p>
+<hr>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>无序列表：使用*  </p>
+<blockquote>
+<p>* 第一<br>* 第二<br>* 第三</p>
+</blockquote>
+<p>有序列表：与正常有序列表无异 </p>
+<blockquote>
+<ol>
+<li>第一</li>
+<li>第二</li>
+<li>第三  </li>
+</ol>
+</blockquote>
+<p>嵌套列表: 只需在前部加入4个空格</p>
+<blockquote>
+<p>* 第一</p>
+<ol>
+<li>1</li>
+<li>2  </li>
+</ol>
+<p>* 第二</p>
+<ol>
+<li>1</li>
+<li>2</li>
+</ol>
+</blockquote>
+<p>输出为：<br>无序列表：   </p>
+<ul>
+<li>第一</li>
+<li>第二</li>
+<li>第三</li>
+</ul>
+<p>有序列表：</p>
+<ol>
+<li>第一</li>
+<li>第二</li>
+<li>第三 </li>
+</ol>
+<p>嵌套列表：</p>
+<ul>
+<li><p>第一</p>
+<ol>
+<li>1</li>
+<li>2  </li>
+</ol>
+</li>
+<li><p>第二</p>
+<ol>
+<li>1</li>
+<li>2</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h2><p>使用&gt;  </p>
+<blockquote>
+<p>&gt;第一层嵌套<br>&gt;&gt;第二层嵌套<br>&gt;&gt;&gt;题三层嵌套  </p>
+</blockquote>
+<p>输出如下：</p>
+<blockquote>
+<p>第一层嵌套</p>
+<blockquote>
+<p>第二层</p>
+<blockquote>
+<p>第三层</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>使用三个```，并标明语言。  </p>
+<blockquote>
+<p>```C++<br>    void bank::save(double num){<br>    using namespace std;<br>    if (num &lt; 1){<br>        cout &lt;&lt; “Error, can not be nagative.” &lt;&lt; endl;<br>    }<br>    money += num;<br>    cout &lt;&lt; “The new balence is : “ &lt;&lt; money &lt;&lt; endl;<br>    }<br>```</p>
+</blockquote>
+<p>输出如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">bank::save</span><span class="params">(<span class="keyword">double</span> num)</span></span>&#123;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">if</span> (num &lt; <span class="number">1</span>)&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Error, can not be nagative.&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line">money += num;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;The new balence is : &quot;</span> &lt;&lt; money &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>[链接名称](链接内容)</p>
+<blockquote>
+<p>[Google](<a target="_blank" rel="noopener" href="http://www.google.com/">www.google.com\</a>)</p>
+</blockquote>
+<p>输出如下：<br><a href="www.google.com">Google</a></p>
+<hr>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>![替代文本](图片链接)</p>
+<hr>
+<h2 id="感谢阅读"><a href="#感谢阅读" class="headerlink" title="感谢阅读"></a>感谢阅读</h2><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h3><p><a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-image.html">https://www.runoob.com/markdown/md-image.html</a><br><a target="_blank" rel="noopener" href="https://support.typora.io/Line-Break/">https://support.typora.io/Line-Break/</a></p>
 
       
 
@@ -189,7 +276,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/28/My-first-blog/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/08/29/Notes%20for%20Markdown/">展开全文 >></a>
         </p>
       
 
